@@ -19,7 +19,7 @@ def cleanresume(txt):
     cleantxt=re.sub(r'[^\x00-\x7f]',' ',cleantxt)
     cleantxt=re.sub('\s+',' ',cleantxt)
     return cleantxt
-pip install streamlit
+
 def main():
     st.title("Resume Screeing App")
     upload_file=st.file('upload resume',type=['txt','pdf'])
